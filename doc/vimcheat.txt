@@ -2,6 +2,86 @@
 ----------------------------------------
 
 
+Movement/Search
+---------------
+^             first non white space in line
+<CR>          first non white space in next line
+-             first non white space in previous line
+%             next closing 
+{n}%          move n percent
+;             repeat last f/t/F/T
+,             repeat last f/t/F/T in opposite direction
+*, #          next/previous instance of whole world
+g*, g#        next/previous instance of partial world
+/pattern      search forward
+?pattern      search backward
+n, N          repeat last search forward/backward
+<C-e> <C-y>   scroll window up/down
+
+
+Folding
+-------
+zo            open fold
+zc            close closest fold
+zR            open all folds
+zM            close all folds
+zj            move to start of next fold
+zk            move to end of previous fold
+
+
+Editing
+-------
+gi            goto insert mode where it was last used
+.             repead last change
+Vr-           replace every character in line with -
+d/^#          delete everything up to the next comment
+
+
+Replace
+-------
+% 1,$         range: entire file
+.             range: current line
+/pattern/     range: line where pattern matches
+?pattern?     
+:.,/<\/body>/s,<br>,<br/>,gc  fix br tags form current line until the one with
+</body in it
+&             repeat last substitution on current line
+:&&           repeat with flags
+g&            repeat globally with flags
+
+
+
+Insert mode
+-----------
+<C-y>, <C-e>  insert chars fom above/below
+<C-a>         insert previously inserted text
+
+
+Infos
+-----
+<C-g>         infos
+g<C-g>        detailed infos
+:set ruler    
+
+
+Autocompletion
+--------------
+<C-x><C-o>    omni-completion
+
+
+Help
+----
+<C-]>         navigate to tag
+<C-T>         navigate back
+
+
+Credits
+-------
+Andrei Zmievski
+http://zmievski.org/c/dl.php?file=talks/codeworks-2009/vim-for-php-programmers.pdf 
+Drew Neil (Practical Vim, http://vimcasts.org)
+
+
 
 ----------------------------------------
 vim:tw=78:ts=8:ft=help:norl:
