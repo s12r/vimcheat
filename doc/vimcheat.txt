@@ -69,6 +69,16 @@ Autocompletion
 <C-x><C-o>    omni-completion
 
 
+Netrw
+-----
+:e[dit] .     at current working directory
+:sp[lit] .    in split at current working directory
+:vs[plit] .   in vertical split at current working directory
+:Ex[plore]    at directory of current file
+:Se[xplore]   in split at directory of current file
+:Ve[xplore]   in vertical split at directory of current file
+
+
 Help
 ----
 <C-]>         navigate to tag
@@ -77,8 +87,7 @@ Help
 
 Credits
 -------
-Andrei Zmievski
-http://zmievski.org/c/dl.php?file=talks/codeworks-2009/vim-for-php-programmers.pdf 
+Andrei Zmievski http://zmievski.org/c/dl.php?file=talks/codeworks-2009/vim-for-php-programmers.pdf 
 Drew Neil (Practical Vim, http://vimcasts.org)
 
 
