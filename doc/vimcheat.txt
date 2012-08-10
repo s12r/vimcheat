@@ -19,6 +19,23 @@ n, N          repeat last search forward/backward
 <C-e> <C-y>   scroll window up/down
 
 
+Text objects
+------------
+              only on visual selection or as motion
+iw            select inner word
+aw            select outer word
+iW            select inner WORD
+aW            select outer WORD
+it            select inner tag
+at            select outer tag
+i) ib         select inner () block
+i} iB         select inner {} block
+i]            select inner [] block
+i>            select inner <> block
+i"            select inner "" block
+i'            select inner '' block
+
+
 Folding
 -------
 zo            open fold
