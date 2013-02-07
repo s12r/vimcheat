@@ -19,6 +19,19 @@ n, N          repeat last search forward/backward
 <C-e> <C-y>   scroll window up/down
 
 
+Operator commands
+-----------------
+c             Change
+d             Delete
+y             Yank into register
+g~            Swap case
+gu            Make lowercase
+gU            Make uppercase
+>             Shift right
+<             Shift left
+=             Autoindent
+!             Filter {motion} lines through external programm
+
 Text objects
 ------------
               only on visual selection or as motion
@@ -70,8 +83,12 @@ g&            repeat globally with flags
 
 Insert mode
 -----------
+<C-h>         Del back one char
+<C-w>         Del back one word
+<C-u>         Del back one line
 <C-y>, <C-e>  insert chars fom above/below
 <C-a>         insert previously inserted text
+<C-o>         Switch to 'insert normal mode'
 
 
 Infos
@@ -83,7 +100,21 @@ g<C-g>        detailed infos
 
 Autocompletion
 --------------
+<C-n>         generic keywords
+<C-x><C-n>    Current buffer keywords
+<C-x><C-i>    Included file keywords
+<C-x><C-k>    Dictionary lookup
+<C-x><C-f>    Filename completion
+<C-x><C-l>    Complete line
 <C-x><C-o>    omni-completion
+
+              Autocompletion menu:
+<C-p>, <C-n>  previous, next
+<Up>, <Down>  previous/next without selection
+<C-y>         accept selection
+<C-e>         Exit selection
+<C-h>         Delete one char
+<C-l>         Add one char
 
 
 Netrw
