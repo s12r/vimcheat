@@ -67,8 +67,30 @@ Vr-           replace every character in line with -
 d/^#          delete everything up to the next comment
 
 
-Replace
--------
+Insert mode
+-----------
+<C-h>         Del back one char
+<C-w>         Del back one word
+<C-u>         Del back to begin of line
+<C-y>, <C-e>  insert chars fom above/below
+<C-a>         insert previously inserted text
+<C-o>         Switch to 'insert normal mode'
+<C-r>0        Paste content from register 0
+<C-r>=        do calculation and insert result
+<C-v>{code}   insert character by code (|i_CTRL-V_digit|)
+<C-k>{c1}{c2} insert character of digraph {c1}{c2} (|digraphs-default|)
+
+
+Replace mode
+------------
+R             Switch to replace mode
+gR            Switch to virtual replace mode
+r{c}          Insert one char
+gr{c}         Insert one char in virtual insert mode
+
+
+Replace via command line
+------------------------
 % 1,$         range: entire file
 .             range: current line
 /pattern/     range: line where pattern matches
@@ -81,22 +103,13 @@ g&            repeat globally with flags
 
 
 
-Insert mode
------------
-<C-h>         Del back one char
-<C-w>         Del back one word
-<C-u>         Del back one line
-<C-y>, <C-e>  insert chars fom above/below
-<C-a>         insert previously inserted text
-<C-o>         Switch to 'insert normal mode'
-
 
 Infos
 -----
 <C-g>         infos
 g<C-g>        detailed infos
 :set ruler    
-
+    
 
 Autocompletion
 --------------
