@@ -17,6 +17,9 @@ g*, g#        next/previous instance of partial world
 ?pattern      search backward
 n, N          repeat last search forward/backward
 <C-e> <C-y>   scroll window up/down
+:{n}          goto line {n}
+{n}G          goto line {n}
+{n}gg         goto line {n}
 
 
 Operator commands
@@ -31,6 +34,7 @@ gU            Make uppercase
 <             Shift left
 =             Autoindent
 !             Filter {motion} lines through external programm
+
 
 Text objects
 ------------
@@ -47,6 +51,13 @@ i]            select inner [] block
 i>            select inner <> block
 i"            select inner "" block
 i'            select inner '' block
+
+
+Visual Mode
+-----------
+<C-g>         toggle between Visual and Select Mode (latter useful in snippmate)
+gv            reselect last visual selection
+o             toggle between begin/end of selection
 
 
 Folding
