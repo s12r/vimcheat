@@ -157,6 +157,11 @@ Help
 <C-T>         navigate back
 
 
+Snippets
+--------
+:%s/^V^M/\r/g   Replace Windows-^M at EOF with newlines
+
+
 Credits
 -------
 Andrei Zmievski http://zmievski.org/c/dl.php?file=talks/codeworks-2009/vim-for-php-programmers.pdf 
