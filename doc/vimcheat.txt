@@ -16,10 +16,23 @@ g*, g#        next/previous instance of partial world
 /pattern      search forward
 ?pattern      search backward
 n, N          repeat last search forward/backward
-<C-e> <C-y>   scroll window up/down
+<C-e> <C-y>   scroll window up/down one line
 :{n}          goto line {n}
 {n}G          goto line {n}
 {n}gg         goto line {n}
+H             goto top of the screen
+L             goto bottom of the screen
+M             goto middle of the screen
+zt            put current line to top of the screen
+zb            put current line to bottom of the screen
+zz            put current line to middle of the screen
+
+
+Jump list
+---------
+:ju[mps]      show jumplist
+<C-o>         goto previous position in jumplist
+<C-i>         goto next position in jumplist
 
 
 Operator commands
