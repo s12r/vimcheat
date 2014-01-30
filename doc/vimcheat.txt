@@ -164,6 +164,19 @@ Netrw
 :Ve[xplore]   in vertical split at directory of current file
 
 
+Vimdiff
+-------
+<C-w><C-w> - switch windows
+do - diff obtain
+dp - diff put
+[c - previous difference
+]c - next difference
+:diffupdate - diff update ;)
+:syntax off - syntax off
+zo - open folded text
+zc - close folded text
+
+
 Help
 ----
 <C-]>         navigate to tag
@@ -179,6 +192,7 @@ Credits
 -------
 Andrei Zmievski http://zmievski.org/c/dl.php?file=talks/codeworks-2009/vim-for-php-programmers.pdf 
 Drew Neil (Practical Vim, http://vimcasts.org)
+Vimdiff snippet: http://andrejk.blogspot.de/2008/04/vimdiff-howto.html
 
 
 
