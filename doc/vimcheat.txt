@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-Movement/Search
----------------
+Movement
+--------
 ^             first non white space in line
 <CR>          first non white space in next line
 -             first non white space in previous line
@@ -11,11 +11,8 @@ Movement/Search
 {n}%          move n percent
 ;             repeat last f/t/F/T
 ,             repeat last f/t/F/T in opposite direction
-*, #          next/previous instance of whole world
-g*, g#        next/previous instance of partial world
-/pattern      search forward
-?pattern      search backward
-n, N          repeat last search forward/backward
+*, #          next/previous instance of whole word
+g*, g#        next/previous instance of partial word
 <C-e> <C-y>   scroll window up/down one line
 :{n}          goto line {n}
 {n}G          goto line {n}
@@ -26,6 +23,14 @@ M             goto middle of the screen
 zt            put current line to top of the screen
 zb            put current line to bottom of the screen
 zz            put current line to middle of the screen
+
+
+Search
+------
+/pattern      search forward
+?pattern      search backward
+n, N          repeat last search forward/backward
+:nohl         turn off current search's highlighting
 
 
 Jump list
