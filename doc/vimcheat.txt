@@ -31,6 +31,7 @@ Search
 ?pattern      search backward
 n, N          repeat last search forward/backward
 :nohl         turn off current search's highlighting
+:%s/pattern//gn	count occurrences of pattern
 
 
 Jump list
@@ -48,6 +49,7 @@ y             Yank into register
 g~            Swap case
 gu            Make lowercase
 gU            Make uppercase
+gx            Open URL under cursor in browser
 >             Shift right
 <             Shift left
 =             Autoindent
